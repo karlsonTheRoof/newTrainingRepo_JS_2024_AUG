@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+</head>
+<body>
+
+<script>
+    /*- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount,
+    genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+*/
+
+    let bookshelf = [
+        {
+            title: 'The Lord of The Rings',
+            pageCount: 100500,
+            genre: 'Fantasy',
+            author: [
+                {
+                    name: 'Tolkien J.R.R'
+
+                },
+                {
+                    age: 100
+                }
+            ]
+        },
+        {
+            title: 'The Invisible Man',
+            pageCount: 200,
+            genre: 'Fantastic',
+            author: [
+                {
+                    name: 'Wells H.G.'
+                },
+                {
+                    age: 150
+                }
+            ]
+        },
+        {
+            title: 'Peter Pan',
+            pageCount: 100,
+            genre: 'Fairy Tale',
+            author: [
+                {
+                    name: 'Barrie J.M.'
+                },
+                {
+                    age: 150
+                }
+            ]
+        }
+    ];
+    console.log(bookshelf[2].author[1]);
+</script>
+</body>
+</html>
