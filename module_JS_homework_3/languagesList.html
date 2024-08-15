@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lang</title>
+</head>
+<body>
+
+
+<script>
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+    document.write('<ul>');
+
+    //document.write('<ul>');-->creating an open tag of the ul list
+
+    for (let item of listOfItems) {
+        document.write(`<li>${item}</li>`);
+    }
+
+
+    //For..of cycle iterating through  each array element.
+
+    document.write('</ul>');
+
+    //document.write('</ul>') --> closing the tag of list
+
+</script>
+</body>
+</html>

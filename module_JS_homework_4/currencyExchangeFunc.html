@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CurExchange</title>
+</head>
+<body>
+
+//Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+<script>
+    function exchange(sumUAH, currencyValues, exchangeCurrency) {
+        // Чи є курс для потрібної валюти
+        if (currencyValues[exchangeCurrency] !== undefined) {
+            // Розраховуємо суму
+            let exchangedAmount = sumUAH / currencyValues[exchangeCurrency];  //<-- не розумію чому ?
+            // Чи можливо без неї? Тобто одразу писати куегкт sumUAH / currencyValues[exchangeCurrency] ??
+            return exchangedAmount;
+        } else {
+            // Якщо валюта не знайдена, повертаємо повідомлення про помилку
+            return `Курс для валюти ${exchangeCurrency} не знайдено.`;
+        }
+    }
+
+    // Приклад
+    let currencyValues = {
+        USD: 42,
+        EUR: 43,
+        GBP: 48
+    };
+
+    let sumUAH = 1000;
+    let exchangeCurrency = prompt('Kindly choose the currency from the list: USD,EUR,GBP');
+
+    let result = exchange(sumUAH, currencyValues, exchangeCurrency);
+    console.log(result);
+</script>
+</body>
+</html>
